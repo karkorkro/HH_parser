@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link href="templates/templates_bootstrap/startbootstrap-landing-page-gh-pages/css/styles.css" rel="stylesheet"/>
+    <link href="/static/css/styles.css" rel="stylesheet"/>
     <title>Search</title>
 </head>
 <body>
@@ -16,10 +16,10 @@
                             <h1 class="mb-5">Начать поиск</h1>
                             <!-- Signup form-->
 
-                       <form class="form-inline">
+                       <form method="post" class="form-inline">
                             <div class="form-group mx-sm-3 mb-2">
                                 <label class="sr-only">Введите запрос</label>
-                                <input type="password" class="form-control"  placeholder="Введите запрос">
+                                <input type="text" class="form-control"  placeholder="Введите запрос" name="search_subject">
                             </div>
                             <p><select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
                                 <option selected>Где искать</option>
@@ -36,8 +36,12 @@
        </div>
 </header>
 
-    </form>
+
     <p>
-    <a href="index.html" type="button" class="btn btn-primary">На главную</a></p>
+
+    </p>
+    <p>
+        <a href="/" type="button" class="btn btn-primary">На главную</a>
+    </p>
 </body>
 </html>
